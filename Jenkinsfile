@@ -10,19 +10,19 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'pip install -r requirements.txt'
+                bat 'pip install -r requirements.txt'
             }
         }
 
         stage('Build Model') {
             steps {
-                sh 'python main.py'
+                bat 'python main.py'
             }
         }
 
         stage('Test Model') {
             steps {
-                sh 'python -m unittest test_main.py'
+                bat 'python -m unittest test_main.py'
             }
         }
     }
