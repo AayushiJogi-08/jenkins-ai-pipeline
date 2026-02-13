@@ -11,4 +11,4 @@ class TestModel(unittest.TestCase):
         self.assertIsNotNone(model)
 
 if __name__ == "__main__":
-    unittest.main
+    unittest.main()
